@@ -1,10 +1,13 @@
-import React from 'react'
-
+import { Flex, Image } from "@chakra-ui/react";
+import mainChar from '../../assets/main-character.svg'
+import Layout from "../layout/Layout";
 const StartScreen = () => {
   return (
-    <div>
-      <h1>Choose character</h1>
-    </div>
+    <Layout>
+      <Flex minH={"80vh"} bg={"#001826"}>
+        <Image src={mainChar} />
+      </Flex>
+    </Layout>
   )
 }
 
