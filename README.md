@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+## Aziy Game Concept Demo - Readme
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This document provides an overview of the Aziy game concept demo, a React web application showcasing core gameplay mechanics.
 
-## Available Scripts
+**Project Setup:**
 
-In the project directory, you can run:
+1. **Prerequisites:** Node.js and npm (or yarn) installed on your system.
+2. **Clone Repository:** Clone this repository using `git clone https://<your_repository_url>`.
+3. **Install Dependencies:** Navigate to the project directory and run `npm install` (or `yarn install`) to install required dependencies.
 
-### `npm start`
+**Running the Application:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Start the development server using `npm start` (or `yarn start`). This will launch the application at http://localhost:3000 by default.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Gameplay Overview:**
 
-### `npm test`
+This demo showcases various aspects of the planned Aziy game:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Character Interaction:** An animated character appears on the left side of the screen.
+- **Wallet Connection:** A "Connect Wallet" button allows users to connect their Phantom wallet (testnet recommended).
+- **Level Selection:** A section displays available levels (currently only "Beginner" is active).
+- **World Map:** A map visualizes different locations within the game world. Clicking on "Lounge City" navigates to that area.
+- **Lounge City:** This screen depicts an interactive environment with clickable elements:
+    - **Start Code Challenge:** Clicking on the computer initiates the code challenge.
+    - **Mini-Game:** Clicking on the glowing cube triggers a mini-memory game where users can win a rare Aziy card.
+- **Player Profile:** Accessible from the top right corner, this screen  will display player information, rank, and collectibles they own and can mint in the game.
+- **Navigation:** Buttons allow users to navigate between different screens and return to the main menu.
+- **Sound Button:** A button  is included for future sound control.
 
-### `npm run build`
+**Technology Stack:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React: JavaScript library for building user interfaces.
+- Chakra UI: React component library for consistent styling.
+- Solana
+- Metaplex
+- Phantom wallet
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Further Development:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This demo serves as a foundation for the full Aziy game. Future development will implement the following:
 
-### `npm run eject`
+-- tbr
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**License:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
