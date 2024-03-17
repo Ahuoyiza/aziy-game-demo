@@ -1,25 +1,45 @@
-import logo from './logo.svg';
+import React from 'react'
+import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import Welcome from './components/Welcome';
+import StartScreen from './components/screens/StartScreen';
+import WorldScreen from './components/screens/WorldScreen';
+import Profile from './components/screens/Profile';
+import Error from './components/Error';
 import './App.css';
 
-function App() {
+
+const router  = createBrowserRouter([
+    {
+      path: '/',
+      element: <Welcome />
+    },
+    {
+      path: '/start',
+      element: <StartScreen />
+    },
+    {
+      path: '/map',
+      element: <WorldScreen />
+    },
+    {
+      path: '/profile',
+      element: <Profile />
+    },
+    {
+    path: '/*',
+    element: <Error />
+    },
+  
+  ])
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <RouterProvider router={router}></RouterProvider>
+    <h1 className='mobile-warning '>Oops, this app can only be viewd on desktop or screens larger than 768px</h1>
+    </>
+  )
 }
 
-export default App;
+export default App
