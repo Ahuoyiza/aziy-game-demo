@@ -1,6 +1,6 @@
 // import React, { useState, useEffect } from 'react';
 import { Flex, IconButton, Tooltip, Link} from '@chakra-ui/react';
-import { FaMapMarkerAlt, FaVolumeUp,  } from 'react-icons/fa';
+import { FaMapMarkerAlt  } from 'react-icons/fa';
 import { GiSoundOn } from "react-icons/gi";
 // import { AiOutlineInfoCircle } from 'react-icons/ai';
 import {ChatIcon} from '@chakra-ui/icons'
@@ -36,8 +36,9 @@ const Footer = () => {
   // }, []);
 
   return (
-    <Flex color={"#1de9fa"}justifySelf={"flex-end"} justifyContent="space-between" alignItems="center" fixed="bottom" py={"2em"} px={"3em"} bg={"#001826"}>
-      <IconButton color={"#1de9fa"}   fontSize={"2em"}  as={Link} href="/map" icon={<FaMapMarkerAlt />} />
+    <Flex color={"#1de9fa"}justifySelf={"flex-end"} justifyContent="space-between" alignItems="center" fixed="bottom" py={"1em"} px={"3em"} bg={"#001826"}>
+      <IconButton color={"#1de9fa"} border={"none"}outline={"none"}
+          bg={"#001826"}   fontSize={"2em"}  as={Link} href="/map" icon={<FaMapMarkerAlt />} />
      
         <Tooltip color={"#fff"} label={"Level 1: Beginner. Learn basic coding concepts." }>
          <ChatIcon  fontSize={"2em"} />
