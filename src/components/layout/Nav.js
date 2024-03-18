@@ -10,7 +10,8 @@ const Nav = () => {
         <Image src={aziyLogo} alt="Aziy Logo" boxSize="70px" />
       </Link>
       <Flex>
-        <IconButton cursor={"pointer"} as={Link} href="/profile" color={"#ff743f"} fontSize={"2em"} icon={<FaUserAstronaut />} aria-label="Profile" />
+        <IconButton  border={"none"}outline={"none"}
+          bg={"#001826"} cursor={"pointer"} as={Link} href="/profile" color={"#ff743f"} fontSize={"2em"} icon={<FaUserAstronaut />} aria-label="Profile" />
       </Flex>
     </Box>
   );

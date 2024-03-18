@@ -4,6 +4,7 @@ import Welcome from './components/Welcome';
 import StartScreen from './components/screens/StartScreen';
 import WorldScreen from './components/screens/WorldScreen';
 import Profile from './components/screens/Profile';
+import LoungeCityScreen from './components/screens/LoungeCityScreen';
 import Error from './components/Error';
 import './App.css';
 
@@ -24,6 +25,10 @@ const router  = createBrowserRouter([
     {
       path: '/profile',
       element: <Profile />
+    },
+    {
+      path: '/lounge',
+      element: <LoungeCityScreen />
     },
     {
     path: '/*',
